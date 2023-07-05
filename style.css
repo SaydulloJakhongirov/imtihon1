@@ -347,12 +347,12 @@ table {
     .overflow{
         overflow-x: auto;
     }
-}
-
-@media screen and (max-width:760px) {
     .hum-burger {
         display: none;
     }
+}
+
+@media screen and (max-width:760px) {
 
     .number-kjs {
         font-size: 14px;
@@ -364,6 +364,7 @@ table {
 }
 
 @media screen and (max-width:952px) {
+    
     .group-btn {
         display: flex;
         justify-content: center;
