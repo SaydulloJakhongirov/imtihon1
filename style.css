@@ -25,6 +25,10 @@ body {
     box-shadow: 5px 10px #888888;
 }
 
+.menu{
+    padding: 0px 8px;
+}
+
 .justfy-beetwen {
     justify-content: space-between;
 }
@@ -45,19 +49,19 @@ body {
     padding: 16px;
 }
 
-.w-full {
+.w-fudsd {
+    margin-left: 209px;
     width: 100%;
 }
 
 .container {
     margin: 0 auto;
-    max-width: 1240px;
     display: flex;
 }
 
 .home-image {
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
 }
 
 .civil {
@@ -67,6 +71,7 @@ body {
 
 .hum-burger {
     border: 1px solid #E5E7EB;
+    position: fixed;
 }
 
 .react {
@@ -89,8 +94,7 @@ body {
 .item1 {
     display: flex;
     gap: 12px;
-    padding: 10px;
-    padding-left: 35px;
+    padding: 8px 12px 8px 8px;
 }
 
 .item1:hover {
@@ -112,19 +116,7 @@ body {
 .border-number {
     display: flex;
     align-items: center;
-    margin-left: 60px;
-}
-
-.border-numb {
-    display: flex;
-    align-items: center;
-    padding-left: 80px;
-}
-
-.border {
-    display: flex;
-    align-items: center;
-    padding-left: 35px;
+    margin-left: auto;
 }
 
 input {
