@@ -55,6 +55,11 @@ body {
     display: flex;
 }
 
+.home-image {
+    width: 18px;
+    height: 18px;
+}
+
 .civil {
     font-weight: 550;
     color: black;
@@ -179,23 +184,20 @@ input {
     cursor: pointer;
 }
 
-
-th {
+.box {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding-top: 100px;
+    gap: 30px;
+    width: 90%;
 }
 
 .leter {
-    display: flex;
-    padding: 10px;
-    gap: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .a-logo {
-    display: flex;
-    justify-content: flex-start;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -209,14 +211,6 @@ th {
 
 .hero {
     font-weight: 400;
-}
-
-.junny1 {
-    padding-left: 50px;
-}
-
-.junny2 {
-    padding-left: 20px;
 }
 
 .number-kjs {
@@ -239,28 +233,150 @@ th {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding: 16px 24px;
     border: 1px solid #0000000F;
+    box-shadow: 0.5px 0.5px #888888;
 }
 
 .contact1 {
     padding-top: 100px;
 }
 
+.text-student {
+    padding: 30px;
+}
 
+.student {
+    display: flex;
+    justify-content: space-between;
+}
 
-@media screen and (max-width:860px) {
-    .hum-burger {
-        display: none;
+.student-btn {
+    padding: 25px;
+}
+
+.all-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border-radius: 6px;
+    border: 1px solid var(--gray-300, #D1D5DB);
+    padding: 12px 15px;
+    color: gray/700;
+}
+
+/* jadvallar */
+
+.group-name {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.menu-name {
+    border: 1px solid var(--gray-300, #D1D5DB);
+    padding: 17px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #d9e4ee;
+}
+
+.text-name {
+    color: var(--gray-500, #6B7280);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* css jadval */
+th,
+td {
+    border-bottom: 0.5px solid rgb(213, 202, 202);
+    padding: 17px;
+}
+
+.umer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+tr {
+    border: 0.2px solid rgb(213, 202, 202);
+    border-top-left-radius: 15px;
+}
+
+thead {
+    text-align: left;
+}
+
+.logo-n {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-b{
+    display: flex;
+    flex-direction: column;
+}
+
+.were-good {
+    text-decoration: none;
+    color: indigo/600;
+}
+
+.bakground {
+    background-color: rgb(170, 255, 170);
+    color: #065F46;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 8px;
+    width: 100%;
+    border-top-left-radius: 8px;
+}
+
+.parent {
+    background: var(--gray-50, #d0d1d2);
+}
+
+@media screen and (max-width:1034px) {
+    .overflow{
+        overflow-x: auto;
     }
 }
 
-@media screen and (max-width:912px) {
+@media screen and (max-width:760px) {
+    .hum-burger {
+        display: none;
+    }
+
+    .number-kjs {
+        font-size: 14px;
+    }
+
+    .hero {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:952px) {
     .group-btn {
         display: flex;
         justify-content: center;
         position: relative;
         top: 90px;
+    }
+
+    .next{
+        font-size: 10px;
+    }
+
+    .junny {
+        padding-left: 30px;
     }
 
     .div-btn {
@@ -269,70 +385,83 @@ th {
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:650px) {
     .death {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
-    .a-logo {
-        text-align: center;
-    }
-
-    .gero {
+    .leter {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
     }
-
-     .contact2{
-        margin-left: -30px;
-     }
 }
 
-@media screen and (max-width:365px) {
-    .mail{
-        font-size: 13px;
-    }
-    .blue-text{
-        font-size: 25px;
-    }
-    .btn1{
-        padding: 5px 10px;
-        font-size:10px;
+@media screen and (max-width:430px) {
+    .student {
         display: flex;
-        gap: 10px;
+        flex-direction: column;
+        text-align: center;
         align-items: center;
+    }
+
+    .mail {
+        font-size: 14px;
+    }
+
+    .blue-text {
+        font-size: 40px;
     }
 
     .junny {
         display: none;
-     }
- 
-     .junny1 {
-         display: none;
-      }
- 
-      .junny2 {
-         display: none;
-      }
-    .btn2{
-        padding: 5px 10px;
-        font-size:10px;
+    }
+
+    .era {
+        display: none;
+    }
+
+    .student-btn {
+        margin-top: -30px;
+    }
+}
+
+@media screen and (max-width:365px) {
+    .mail {
+        font-size: 11px;
+    }
+
+    .blue-text {
+        font-size: 26px;
+    }
+
+    .btn1 {
+        padding: 8px 17px;
+        font-size: 12px;
         display: flex;
         gap: 10px;
         align-items: center;
     }
-    .btn3{
-        padding: 5px 10px;
-        font-size:10px;
+
+    .btn2 {
+        padding: 8px 17px;
+        font-size: 12px;
         display: flex;
         gap: 10px;
         align-items: center;
     }
-    .btn-logo{
+
+    .btn3 {
+        padding: 8px 17px;
+        font-size: 12px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .btn-logo {
         width: 10px;
     }
 }
