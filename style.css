@@ -43,6 +43,7 @@ body {
 
 .width {
     width: 48px;
+    height: 48px;
 }
 
 .p-logo {
@@ -55,7 +56,6 @@ body {
 }
 
 .container {
-    margin: 0 auto;
     display: flex;
 }
 
@@ -64,14 +64,35 @@ body {
     height: 24px;
 }
 
+.focus-img{
+    width: 32px;
+    height: 32px;
+}
+
+.search-img{
+    width: 20px;
+    height: 20px;
+}
+
 .civil {
     font-weight: 550;
     color: black;
 }
 
+.gero{
+    display: grid;
+    grid-row-gap: 8px;
+}
+
+.junny{
+    display: grid;
+    grid-row-gap: 8px;
+}
+
 .hum-burger {
     border: 1px solid #E5E7EB;
     position: fixed;
+    height: 800px;
 }
 
 .react {
@@ -82,6 +103,10 @@ body {
     display: flex;
     gap: 10px;
     margin: 30px;
+}
+
+.saydullo{
+    padding: 30px;
 }
 
 .home-text {
@@ -142,12 +167,17 @@ input {
     font-weight: 600;
 }
 
+.Civil{
+    width: 33px;
+    height: 30px;
+}
+
 .group-btn {
     display: flex;
     justify-content: flex-end;
     margin-top: -110px;
     gap: 12px;
-    padding: 0px 20px;
+    padding: 0px 50px;
 }
 
 .btn1 {
@@ -232,11 +262,11 @@ input {
 }
 
 .contact1 {
-    padding-top: 100px;
+    padding-top: 30px;
 }
 
 .text-student {
-    padding: 30px;
+    padding: 5px 30px;
 }
 
 .student {
@@ -245,7 +275,12 @@ input {
 }
 
 .student-btn {
-    padding: 25px;
+    padding: 2px 30px;
+}
+
+.btn-logo{
+    width: 15px;
+    height: 15px;
 }
 
 .all-btn {
@@ -305,11 +340,17 @@ thead {
 .logo-n {
     display: flex;
     flex-direction: column;
+    display: grid;
+    grid-row-gap: 8px;
 }
 
-.logo-b{
-    display: flex;
-    flex-direction: column;
+.overflow{
+    padding: 34px;
+}
+
+.hight{
+    width: 40px;
+    height: 40px;
 }
 
 .were-good {
@@ -331,8 +372,12 @@ table {
     border-top-left-radius: 8px;
 }
 
+thead{
+    border-top-left-radius: 15px;
+}
+
 .parent {
-    background: var(--gray-50, #d0d1d2);
+    background: var(--gray-50, #F9FAFB);
 }
 
 @media screen and (max-width:1034px) {
@@ -341,6 +386,9 @@ table {
     }
     .hum-burger {
         display: none;
+    }
+    .w-fudsd{
+        margin-left: -1px;
     }
 }
 
